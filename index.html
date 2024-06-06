@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Color Schemer</title>
+  </head>
+  <body>
+    <h1>Color Scheme Generator</h1>
+    <form id="get-scheme">
+      <!-- <label for="choose-color">Choose color:</label> -->
+      <input class="form-el" type="color" id="choose-color" value="#ff0000" />
+      <!-- <label for="choose-type">Choose type:</label> -->
+      <select class="form-el" name="choose-type" id="choose-type">
+        <option value="monochrome" selected="selected">monochrome</option>
+        <option value="monochrome-dark">monochrome-dark</option>
+        <option value="monochrome-light">monochrome-light</option>
+        <option value="analogic">analogic</option>
+        <option value="complement">complement</option>
+        <option value="analogic-complement">analogic-complement</option>
+        <option value="triad">triad</option>
+        <option value="quad">quad</option>
+      </select>
+      <button class="form-el" type="submit" id="color-btn">Get color scheme</button>
+    </form>
+    <div id="color-container"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

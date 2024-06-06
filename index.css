@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+#get-scheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#choose-color {
+  width: 150px;
+  height: 80px;
+  cursor: pointer;
+  border: 5px double silver;
+}
+
+#choose-type {
+  font-family: inherit;
+  font-size: 0.875rem;
+  width: auto;
+  padding: 0.2em 0.5em;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#color-container {
+  display: block;
+}
+
+#color-btn {
+  font-size: 0.875rem;
+  font-family: inherit;
+  text-align: center;
+  padding: 0.5em 0.75em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.form-el {
+  margin-bottom: 10px;
+}
+
+.color-hex {
+  cursor: pointer;
+  padding: 10px 0; /* Increase the clickable height area */
+  user-select: none; /* Disable text selection */
+  margin: 0 auto;
+}
+
+.color-hex:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 460px) {
+  #color-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .color-item {
+    /* flex: 1 1 100px;  */
+    /* Allows items to be flexible but maintain a minimum width */
+    /* max-width: 100px; */
+    /* Limits the maximum width of each item */
+
+    flex: 1 1 calc(33.333% - 20px); /* Allows up to three items per row */
+    max-width: calc(
+      33.333% - 20px
+    ); /* Ensures max width is consistent with flex-basis */
+    max-width: 100px;
+  }
+}
