@@ -20,11 +20,33 @@ body {
   align-items: center;
 }
 
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400; 
+  color: #333; 
+  margin: 5px 0; 
+  line-height: 1.5; 
+  text-align: left; 
+  margin-left: 1.5em;
+}
+
+ol {
+  font-size: 0.8rem;
+  text-align: left; 
+}
+
+/* Adjust the padding or margin of the list items for better appearance */
+ol li {
+  margin: 0;
+  padding: 5px; /* Adjust padding as needed */
+}
+
 #choose-color {
-  width: 150px;
+  width: 180px;
   height: 80px;
   cursor: pointer;
   border: 5px double silver;
+  margin-bottom: 1.5em;
 }
 
 #choose-type {
@@ -34,6 +56,7 @@ body {
   padding: 0.2em 0.5em;
   border: 2px solid black;
   cursor: pointer;
+  margin-bottom: 1.5em;
 }
 
 #color-container {
@@ -47,6 +70,9 @@ body {
   padding: 0.5em 0.75em;
   border: 1px solid black;
   cursor: pointer;
+  margin-bottom: 1.5em;
+  background-color: #333;
+  color:aliceblue
 }
 
 .form-el {
